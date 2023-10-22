@@ -1,0 +1,19 @@
+import random
+
+def removeDuplicate(a):
+    l=len(a)
+    b=[]
+    for item in a:
+        if item not in b:
+            b.append(item)
+    return b
+
+
+length=random.randint(5,10)
+myList=[]
+
+for i in range (length):
+    myList.append(random.randint(0,100))
+
+print(f"My list before removing duplicates (if any):  {myList}")
+print(f"My list after removing duplicates (if any): ",removeDuplicate(myList))
